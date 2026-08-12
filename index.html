@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Avinesh S | Biomedical Engineering | QA | R&D | Testing</title>
+<title>Avinesh S | Biomedical Engineering | QA | R&D</title>
 
 <style>
+
+/* =========================
+   GENERAL
+========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -16,10 +24,31 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f7f9fc;
+    background: #f8fafc;
     color: #1e293b;
-    line-height: 1.6;
+    line-height: 1.7;
 }
+
+section {
+    padding: 80px 8%;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 34px;
+    color: #0f172a;
+    margin-bottom: 45px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
 
 header {
     background: #0f172a;
@@ -57,23 +86,26 @@ nav a:hover {
     color: #38bdf8;
 }
 
-/* HERO */
+
+/* =========================
+   HERO
+========================= */
 
 .hero {
-    min-height: 88vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
-    padding: 70px 8%;
+    padding: 80px 8%;
     background: linear-gradient(135deg, #e0f2fe, #f8fafc);
 }
 
 .hero-content {
-    max-width: 850px;
+    max-width: 900px;
 }
 
 .tag {
     display: inline-block;
-    padding: 7px 15px;
+    padding: 7px 16px;
     border-radius: 30px;
     background: #dbeafe;
     color: #0369a1;
@@ -82,12 +114,13 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-size: 55px;
+    font-size: 58px;
     color: #0f172a;
     margin-bottom: 12px;
 }
 
 .hero h2 {
+    text-align: left;
     font-size: 25px;
     color: #0284c7;
     margin-bottom: 20px;
@@ -95,7 +128,7 @@ nav a:hover {
 
 .hero p {
     font-size: 18px;
-    max-width: 760px;
+    max-width: 780px;
     margin-bottom: 30px;
 }
 
@@ -103,6 +136,7 @@ nav a:hover {
     display: inline-block;
     padding: 12px 23px;
     margin-right: 10px;
+    margin-bottom: 10px;
     border-radius: 7px;
     text-decoration: none;
     font-weight: bold;
@@ -120,18 +154,10 @@ nav a:hover {
     border: 2px solid #0284c7;
 }
 
-/* SECTIONS */
 
-section {
-    padding: 75px 8%;
-}
-
-section h2 {
-    text-align: center;
-    font-size: 32px;
-    color: #0f172a;
-    margin-bottom: 40px;
-}
+/* =========================
+   ABOUT
+========================= */
 
 .about {
     max-width: 850px;
@@ -140,10 +166,41 @@ section h2 {
     font-size: 17px;
 }
 
-/* SKILLS */
+
+/* =========================
+   WHAT I BRING
+========================= */
+
+.bring-section {
+    background: #eff6ff;
+}
+
+.bring-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.bring-card {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+}
+
+.bring-card h3 {
+    color: #0369a1;
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
 
 .skill-category {
-    margin-bottom: 35px;
+    margin-bottom: 38px;
 }
 
 .skill-category h3 {
@@ -168,17 +225,20 @@ section h2 {
     font-weight: 600;
 }
 
-/* CARDS */
+
+/* =========================
+   CARDS
+========================= */
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     gap: 25px;
 }
 
 .card {
     background: white;
-    padding: 28px;
+    padding: 30px;
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.07);
     border-top: 4px solid #0284c7;
@@ -186,24 +246,105 @@ section h2 {
 
 .card h3 {
     color: #0369a1;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
+}
+
+.card .date {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .card ul {
     padding-left: 20px;
+    margin-top: 12px;
 }
 
-/* CAREER */
+.card li {
+    margin-bottom: 7px;
+}
+
+
+/* =========================
+   PROJECT SHOWCASE
+========================= */
+
+.project-showcase {
+    background: #f1f5f9;
+}
+
+.project-main {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 38px;
+    border-radius: 15px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    border-left: 5px solid #0284c7;
+}
+
+.project-main h3 {
+    color: #0369a1;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.project-date {
+    color: #64748b;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.project-block {
+    margin-top: 25px;
+}
+
+.project-block h4 {
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.project-block ul {
+    padding-left: 22px;
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tech {
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   CAREER
+========================= */
 
 .career {
     background: #eff6ff;
+}
+
+.career-intro {
+    text-align: center;
+    max-width: 780px;
+    margin: -20px auto 35px;
 }
 
 .career-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 15px;
-    max-width: 1000px;
+    max-width: 1050px;
     margin: auto;
 }
 
@@ -216,7 +357,29 @@ section h2 {
     box-shadow: 0 3px 12px rgba(0,0,0,0.06);
 }
 
-/* CONTACT */
+
+/* =========================
+   CERTIFICATIONS
+========================= */
+
+.cert-card {
+    position: relative;
+}
+
+.cert-card::before {
+    content: "CERTIFICATION";
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #0284c7;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
 
 .contact {
     text-align: center;
@@ -224,7 +387,7 @@ section h2 {
 }
 
 .contact p {
-    margin: 12px 0;
+    margin: 13px 0;
 }
 
 .contact a {
@@ -233,7 +396,10 @@ section h2 {
     font-weight: bold;
 }
 
-/* FOOTER */
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     background: #0f172a;
@@ -242,7 +408,10 @@ footer {
     padding: 25px;
 }
 
-/* MOBILE */
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 750px) {
 
@@ -258,236 +427,389 @@ footer {
     }
 
     .hero h1 {
-        font-size: 39px;
+        font-size: 40px;
     }
 
     .hero h2 {
         font-size: 21px;
     }
+
+    section {
+        padding: 60px 6%;
+    }
+
+    .project-main {
+        padding: 25px;
+    }
+
 }
+
 </style>
+
 </head>
+
 
 <body>
 
-<!-- NAVIGATION -->
+
+<!-- =========================
+     NAVIGATION
+========================= -->
 
 <header>
+
 <nav>
 
-<div class="logo">Avinesh S</div>
+<div class="logo">
+Avinesh S
+</div>
 
 <ul>
+
 <li><a href="#about">About</a></li>
+
+<li><a href="#bring">Strengths</a></li>
+
 <li><a href="#skills">Skills</a></li>
+
 <li><a href="#education">Education</a></li>
+
 <li><a href="#experience">Experience</a></li>
+
 <li><a href="#projects">Projects</a></li>
+
+<li><a href="#certifications">Certifications</a></li>
+
 <li><a href="#career">Career</a></li>
+
 <li><a href="#contact">Contact</a></li>
+
 </ul>
 
 </nav>
+
 </header>
 
 
-<!-- HERO -->
+
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero">
 
 <div class="hero-content">
 
-<span class="tag">Biomedical Engineering Graduate</span>
+<span class="tag">
+Biomedical Engineering Graduate
+</span>
 
-<h1>Hi, I'm Avinesh S</h1>
+<h1>
+Hi, I'm Avinesh S
+</h1>
 
-<h2>QA • R&D • Testing • Validation • Healthcare Technology</h2>
+<h2>
+QA • R&D • Testing • Validation • Healthcare Technology
+</h2>
 
 <p>
-Biomedical Engineering graduate interested in Quality Assurance,
-Quality Control, Research & Development, Product Testing,
-Verification & Validation, and healthcare technology.
+Biomedical Engineering graduate with a strong foundation in
+medical devices, biomedical instrumentation and healthcare
+technology, with hands-on exposure to medical equipment
+maintenance and IoT-based healthcare projects.
 </p>
 
-<a href="#projects" class="btn">View Projects</a>
+<a href="#projects" class="btn">
+Explore My Projects
+</a>
 
-<a href="#contact" class="btn btn-outline">Contact Me</a>
+<a href="#contact" class="btn btn-outline">
+Let's Connect
+</a>
 
 </div>
 
 </section>
 
 
-<!-- ABOUT -->
+
+<!-- =========================
+     ABOUT
+========================= -->
 
 <section id="about">
 
-<h2>About Me</h2>
+<h2>
+About Me
+</h2>
 
 <div class="about">
 
 <p>
-I am a Biomedical Engineering graduate with a strong interest in
-Quality Assurance, Quality Control, Research & Development,
-Testing, Verification & Validation, medical devices and
-healthcare technology.
-</p>
-
-<br>
-
-<p>
-I am interested in applying engineering principles, analytical
-thinking, testing methodologies, documentation and problem-solving
-to develop, test and improve reliable healthcare products and
-technology solutions.
-</p>
-
-</div>
-
-</section>
-
-
-<!-- SKILLS -->
-
-<section id="skills">
-
-<h2>Skills</h2>
-
-
-<div class="skill-category">
-
-<h3>Quality Assurance & Testing</h3>
-
-<div class="skills">
-
-<span class="skill">Quality Assurance</span>
-<span class="skill">Quality Control</span>
-<span class="skill">Product Testing</span>
-<span class="skill">Test Case Development</span>
-<span class="skill">Test Documentation</span>
-<span class="skill">Verification & Validation</span>
-<span class="skill">Defect Identification</span>
-<span class="skill">Root Cause Analysis</span>
-<span class="skill">Risk Assessment</span>
-<span class="skill">CAPA</span>
-<span class="skill">SOP Documentation</span>
-
-</div>
-
-</div>
-
-
-<div class="skill-category">
-
-<h3>Research & Development</h3>
-
-<div class="skills">
-
-<span class="skill">Research & Development</span>
-<span class="skill">Product Development</span>
-<span class="skill">Prototype Testing</span>
-<span class="skill">Requirements Analysis</span>
-<span class="skill">Design Verification</span>
-<span class="skill">Technical Documentation</span>
-<span class="skill">Problem Solving</span>
-
-</div>
-
-</div>
-
-
-<div class="skill-category">
-
-<h3>Technical Skills</h3>
-
-<div class="skills">
-
-<span class="skill">Python</span>
-<span class="skill">Java</span>
-<span class="skill">HTML</span>
-<span class="skill">CSS</span>
-<span class="skill">JavaScript</span>
-<span class="skill">IoT</span>
-<span class="skill">ESP32</span>
-<span class="skill">Biomedical Sensors</span>
-<span class="skill">Data Analysis</span>
-<span class="skill">Git & GitHub</span>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- EDUCATION -->
-
-<section id="education">
-
-<h2>Education</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>Bachelor of Engineering</h3>
-
-<p><strong>Biomedical Engineering</strong></p>
-
-<p>
-Dhanalakshmi Srinivasan College of Engineering and Technology
-</p>
-
-<p>2022 – 2026</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- EXPERIENCE -->
-
-<section id="experience">
-
-<h2>Internship & Training</h2>
-
-<div class="cards">
-
-
-<div class="card">
-
-<h3>Biomedical Engineering Internship</h3>
-
-<p>
-Practical exposure to hospital biomedical engineering activities,
-medical equipment, preventive maintenance and healthcare
+I am a Biomedical Engineering graduate with a strong foundation
+in medical devices, biomedical instrumentation and healthcare
 technology.
 </p>
 
-</div>
-
-
-<div class="card">
-
-<h3>Critical Care & Assistive Devices</h3>
+<br>
 
 <p>
-Exposure to critical care equipment, assistive devices and
-biomedical technology applications.
+Through internships and practical training, I gained hands-on
+exposure to medical equipment maintenance, preventive maintenance,
+basic troubleshooting and healthcare technology.
+</p>
+
+<br>
+
+<p>
+I am interested in Quality Assurance, Quality Control, Research &
+Development, Testing, Verification & Validation, medical devices
+and healthcare technology.
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     WHAT I BRING
+========================= -->
+
+<section id="bring" class="bring-section">
+
+<h2>
+What I Bring
+</h2>
+
+<div class="bring-grid">
+
+
+<div class="bring-card">
+
+<h3>
+Biomedical Foundation
+</h3>
+
+<p>
+Knowledge of biomedical instrumentation, medical devices and
+healthcare technology.
 </p>
 
 </div>
 
 
-<div class="card">
+<div class="bring-card">
 
-<h3>Biomedical Engineering Training</h3>
+<h3>
+Hands-on Exposure
+</h3>
 
 <p>
-Hands-on learning related to medical equipment, equipment
-maintenance, documentation and healthcare engineering practices.
+Practical exposure to medical equipment through hospital and
+healthcare internships.
+</p>
+
+</div>
+
+
+<div class="bring-card">
+
+<h3>
+Technology Experience
+</h3>
+
+<p>
+Experience with IoT, embedded systems and biomedical
+sensor-based academic projects.
+</p>
+
+</div>
+
+
+<div class="bring-card">
+
+<h3>
+Career Direction
+</h3>
+
+<p>
+Interested in QA, R&D, testing, validation and medical-device
+quality roles.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     SKILLS
+========================= -->
+
+<section id="skills">
+
+<h2>
+Skills
+</h2>
+
+
+<div class="skill-category">
+
+<h3>
+Biomedical & Medical Technology
+</h3>
+
+<div class="skills">
+
+<span class="skill">
+Biomedical Instrumentation
+</span>
+
+<span class="skill">
+Medical Devices
+</span>
+
+<span class="skill">
+Application Support
+</span>
+
+<span class="skill">
+Embedded Systems
+</span>
+
+<span class="skill">
+Preventive Maintenance
+</span>
+
+<span class="skill">
+Calibration
+</span>
+
+</div>
+
+</div>
+
+
+<div class="skill-category">
+
+<h3>
+Quality, Testing & R&D — Areas of Interest
+</h3>
+
+<div class="skills">
+
+<span class="skill">
+Quality Assurance
+</span>
+
+<span class="skill">
+Quality Control
+</span>
+
+<span class="skill">
+Product Testing
+</span>
+
+<span class="skill">
+Verification & Validation
+</span>
+
+<span class="skill">
+Testing
+</span>
+
+<span class="skill">
+Research & Development
+</span>
+
+<span class="skill">
+Product Development
+</span>
+
+<span class="skill">
+Technical Documentation
+</span>
+
+</div>
+
+</div>
+
+
+<div class="skill-category">
+
+<h3>
+Professional Skills
+</h3>
+
+<div class="skills">
+
+<span class="skill">
+Communication
+</span>
+
+<span class="skill">
+Presentation
+</span>
+
+<span class="skill">
+Problem Solving
+</span>
+
+<span class="skill">
+Team Collaboration
+</span>
+
+<span class="skill">
+MS Word
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     EDUCATION
+========================= -->
+
+<section id="education">
+
+<h2>
+Education
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>
+Bachelor of Engineering – Biomedical Engineering
+</h3>
+
+<p class="date">
+2022 – 2026
+</p>
+
+<p>
+<strong>
+Dhanalakshmi Srinivasan College of Engineering and Technology, Chennai
+</strong>
+</p>
+
+<p>
+CGPA:
+<strong>
+8.47 / 10
+</strong>
 </p>
 
 </div>
@@ -497,29 +819,152 @@ maintenance, documentation and healthcare engineering practices.
 </section>
 
 
-<!-- PROJECTS -->
 
-<section id="projects">
+<!-- =========================
+     INTERNSHIP EXPERIENCE
+========================= -->
 
-<h2>Projects</h2>
+<section id="experience">
+
+<h2>
+Internship Experience
+</h2>
 
 <div class="cards">
 
 
 <div class="card">
 
-<h3>Smart ICU Monitoring System</h3>
+<h3>
+Biomedical Engineering Intern — GEM Hospital
+</h3>
+
+<p class="date">
+Chennai | Oct 2025 – Jan 2026
+</p>
+
+<ul>
+
+<li>
+Assisted in maintenance of patient monitors,
+ventilators, ECG machines and infusion pumps.
+</li>
+
+<li>
+Observed laparoscopic and endoscopy systems
+in OT/ICU.
+</li>
+
+<li>
+Supported maintenance documentation.
+</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+Intern — NIEPMD
+</h3>
+
+<p class="date">
+Chennai | Jul 2025
+</p>
+
+<ul>
+
+<li>
+Gained exposure to rehabilitation and assistive
+medical devices.
+</li>
+
+<li>
+Observed assessment and fitting procedures
+for assistive aids.
+</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+Intern — Critical Care & Assistive Devices
+</h3>
+
+<p class="date">
+Medcuore, Chennai | Feb 2025
+</p>
+
+<ul>
+
+<li>
+Learned the basics of critical care equipment
+and assistive technologies.
+</li>
+
+<li>
+Gained exposure to ventilators, monitors and
+patient support devices.
+</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     PROJECTS
+========================= -->
+
+<section id="projects">
+
+<h2>
+Projects
+</h2>
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+NABH-Compliant IoT-Based Smart ICU Monitoring
+and Maintenance System
+</h3>
+
+<p class="date">
+Dec 2025 – Jun 2026
+</p>
 
 <p>
-IoT-enabled Smart ICU Monitoring System designed for real-time
-monitoring, equipment visibility and preventive maintenance.
+Developed an NABH-compliant IoT-based Smart ICU Monitoring
+and Maintenance System for real-time patient and equipment
+monitoring.
 </p>
 
 <br>
 
+<p>
+<strong>Technologies & Components:</strong>
+</p>
+
 <ul>
 
-<li>ESP32 Controller</li>
+<li>ESP32</li>
 
 <li>ECG Sensor</li>
 
@@ -531,40 +976,194 @@ monitoring, equipment visibility and preventive maintenance.
 
 <li>BMP180</li>
 
-<li>Wi-Fi / MQTT</li>
+<li>IoT-based monitoring</li>
 
-<li>Environmental Monitoring</li>
-
-<li>Equipment Maintenance Logger</li>
-
-<li>NABH-compliant maintenance concept</li>
+<li>Equipment maintenance monitoring</li>
 
 </ul>
 
 </div>
 
 
+
 <div class="card">
 
-<h3>Biomedical Sensor & IoT Systems</h3>
+<h3>
+Incubator Temperature Regulation System
+</h3>
+
+<p class="date">
+Sep 2024 – Dec 2024
+</p>
 
 <p>
-Academic work involving biomedical sensors, IoT communication,
-microcontrollers and healthcare monitoring applications.
+Developed an IoT-based system to automatically regulate
+incubator temperature.
+</p>
+
+<br>
+
+<p>
+<strong>Project Focus:</strong>
+</p>
+
+<ul>
+
+<li>Temperature monitoring</li>
+
+<li>Automatic temperature regulation</li>
+
+<li>IoT-based system development</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     SMART ICU PROJECT SHOWCASE
+========================= -->
+
+<section class="project-showcase">
+
+<h2>
+Featured Project
+</h2>
+
+<div class="project-main">
+
+<h3>
+Smart ICU Monitoring & Maintenance System
+</h3>
+
+<p class="project-date">
+December 2025 – June 2026
+</p>
+
+
+<div class="project-block">
+
+<h4>
+The Challenge
+</h4>
+
+<p>
+ICU environments require continuous visibility of patient
+parameters and equipment status, together with effective
+maintenance monitoring.
 </p>
 
 </div>
 
 
-<div class="card">
+<div class="project-block">
 
-<h3>Testing & Quality-Oriented Project Work</h3>
+<h4>
+The Solution
+</h4>
 
 <p>
-Academic project experience involving system testing,
-requirements analysis, documentation, performance evaluation
-and troubleshooting.
+Developed an NABH-compliant IoT-based Smart ICU Monitoring
+and Maintenance System designed for real-time patient and
+equipment monitoring.
 </p>
+
+</div>
+
+
+<div class="project-block">
+
+<h4>
+Technologies & Components
+</h4>
+
+<div class="tech-list">
+
+<span class="tech">ESP32</span>
+
+<span class="tech">ECG</span>
+
+<span class="tech">MAX30102</span>
+
+<span class="tech">DS18B20</span>
+
+<span class="tech">MPU6050</span>
+
+<span class="tech">BMP180</span>
+
+<span class="tech">IoT</span>
+
+<span class="tech">Biomedical Sensors</span>
+
+</div>
+
+</div>
+
+
+<div class="project-block">
+
+<h4>
+Project Focus
+</h4>
+
+<ul>
+
+<li>
+Real-time patient monitoring
+</li>
+
+<li>
+Equipment monitoring
+</li>
+
+<li>
+Preventive maintenance concept
+</li>
+
+<li>
+IoT-based healthcare monitoring
+</li>
+
+<li>
+NABH-oriented approach
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="project-block">
+
+<h4>
+My Contribution
+</h4>
+
+<ul>
+
+<li>
+System design and integration
+</li>
+
+<li>
+Biomedical sensor integration
+</li>
+
+<li>
+IoT-based monitoring implementation
+</li>
+
+<li>
+Equipment maintenance monitoring concept
+</li>
+
+</ul>
 
 </div>
 
@@ -573,11 +1172,102 @@ and troubleshooting.
 </section>
 
 
-<!-- CAREER INTERESTS -->
+
+<!-- =========================
+     CERTIFICATIONS
+========================= -->
+
+<section id="certifications">
+
+<h2>
+Certifications & Training
+</h2>
+
+<div class="cards">
+
+
+<div class="card cert-card">
+
+<h3>
+Embedded Systems
+</h3>
+
+<p>
+Completed Inplant Training in Embedded Systems at
+<strong>
+Codebind Technologies
+</strong>.
+</p>
+
+</div>
+
+
+
+<div class="card cert-card">
+
+<h3>
+Wearable Technology in Healthcare
+</h3>
+
+<p>
+Completed a workshop titled
+<strong>
+"Wearable Technology in Healthcare"
+</strong>
+and received certification from
+<strong>
+Veridian Micro Lab Pvt. Ltd.
+</strong>.
+</p>
+
+</div>
+
+
+
+<div class="card cert-card">
+
+<h3>
+Artificial Intelligence
+</h3>
+
+<p>
+Completed a
+<strong>
+30-Day Masterclass in Artificial Intelligence
+</strong>
+conducted by
+<strong>
+NoviTech
+</strong>.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     CAREER INTERESTS
+========================= -->
 
 <section id="career" class="career">
 
-<h2>Career Interests</h2>
+<h2>
+Career Interests
+</h2>
+
+<p class="career-intro">
+
+I am interested in entry-level opportunities where I can apply
+my Biomedical Engineering knowledge, technical skills,
+problem-solving ability and interest in quality and technology.
+
+</p>
+
 
 <div class="career-list">
 
@@ -586,11 +1276,11 @@ Junior Quality Specialist
 </div>
 
 <div class="career-item">
-Quality Assurance Engineer
+Quality Assurance
 </div>
 
 <div class="career-item">
-Quality Control Engineer
+Quality Control
 </div>
 
 <div class="career-item">
@@ -614,19 +1304,19 @@ Verification Engineer
 </div>
 
 <div class="career-item">
-Product Testing Engineer
+Product Testing
 </div>
 
 <div class="career-item">
-Medical Device Quality Engineer
+Medical Device Quality
 </div>
 
 <div class="career-item">
-Biomedical R&D Engineer
+Biomedical R&D
 </div>
 
 <div class="career-item">
-Software QA / Testing
+Healthcare Technology
 </div>
 
 </div>
@@ -634,42 +1324,98 @@ Software QA / Testing
 </section>
 
 
-<!-- CONTACT -->
+
+<!-- =========================
+     CONTACT
+========================= -->
 
 <section id="contact" class="contact">
 
-<h2>Let's Connect</h2>
+<h2>
+Let's Connect
+</h2>
 
-<a href="mailto:avineshoffcl@gmail.com">
-avineshoffcl@gmail.com
-</a>
 
 <p>
-<strong>GitHub:</strong>
-<a href="https://github.com/avineshs-bme" target="_blank">
-github.com/avineshs-bme
+
+<strong>
+Email:
+</strong>
+
+<a href="mailto:avineshoffcl@gmail.com">
+
+avineshoffcl@gmail.com
+
 </a>
+
 </p>
 
-<a href="https://www.linkedin.com/in/avinesh-s-b49404324/" target="_blank">
+
+<p>
+
+<strong>
+LinkedIn:
+</strong>
+
+<a
+href="https://www.linkedin.com/in/avinesh-s-b49404324/"
+target="_blank">
+
 LinkedIn Profile
+
 </a>
+
+</p>
+
+
+<p>
+
+<strong>
+GitHub:
+</strong>
+
+<a
+href="https://github.com/avineshs-bme"
+target="_blank">
+
+github.com/avineshs-bme
+
+</a>
+
+</p>
+
 
 <br>
 
-<a href="Avinesh-Biomedical Engineering_cv2.pdf" class="btn">Download Resume
+
+<a
+href="Avinesh_S_Resume.pdf"
+class="btn"
+target="_blank">
+
+Download Resume
+
 </a>
 
 </section>
 
 
-<!-- FOOTER -->
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
-<p>© 2026 Avinesh S | Biomedical Engineering Graduate</p>
+<p>
+
+© 2026 Avinesh S | Biomedical Engineering Graduate
+
+</p>
 
 </footer>
 
+
 </body>
+
 </html>
