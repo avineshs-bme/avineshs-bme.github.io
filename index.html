@@ -40,11 +40,6 @@ section h2 {
     margin-bottom: 45px;
 }
 
-.container {
-    max-width: 1100px;
-    margin: auto;
-}
-
 
 /* =========================
    NAVIGATION
@@ -95,52 +90,106 @@ nav a:hover {
     min-height: 90vh;
     display: flex;
     align-items: center;
-    padding: 80px 8%;
+    padding: 70px 8%;
     background: linear-gradient(135deg, #e0f2fe, #f8fafc);
 }
 
 .hero-content {
-    max-width: 900px;
+    width: 100%;
+    max-width: 1150px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-photo {
+    flex: 0 0 270px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 240px;
+    height: 240px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 6px solid white;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 .tag {
     display: inline-block;
+
     padding: 7px 16px;
+
     border-radius: 30px;
+
     background: #dbeafe;
+
     color: #0369a1;
+
     font-weight: bold;
+
     margin-bottom: 20px;
 }
 
 .hero h1 {
     font-size: 58px;
+
     color: #0f172a;
+
     margin-bottom: 12px;
 }
 
 .hero h2 {
     text-align: left;
+
     font-size: 25px;
+
     color: #0284c7;
+
     margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 18px;
-    max-width: 780px;
+
+    max-width: 750px;
+
     margin-bottom: 30px;
 }
 
 .btn {
     display: inline-block;
+
     padding: 12px 23px;
+
     margin-right: 10px;
+
     margin-bottom: 10px;
+
     border-radius: 7px;
+
     text-decoration: none;
+
     font-weight: bold;
+
     background: #0284c7;
+
     color: white;
 }
 
@@ -150,7 +199,9 @@ nav a:hover {
 
 .btn-outline {
     background: transparent;
+
     color: #0284c7;
+
     border: 2px solid #0284c7;
 }
 
@@ -161,8 +212,11 @@ nav a:hover {
 
 .about {
     max-width: 850px;
+
     margin: auto;
+
     text-align: center;
+
     font-size: 17px;
 }
 
@@ -177,20 +231,29 @@ nav a:hover {
 
 .bring-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
     gap: 22px;
 }
 
 .bring-card {
     background: white;
+
     padding: 28px;
+
     border-radius: 12px;
+
     text-align: center;
-    box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+
+    box-shadow:
+    0 5px 18px rgba(0,0,0,0.07);
 }
 
 .bring-card h3 {
     color: #0369a1;
+
     margin-bottom: 12px;
 }
 
@@ -205,23 +268,34 @@ nav a:hover {
 
 .skill-category h3 {
     text-align: center;
+
     margin-bottom: 18px;
+
     color: #0369a1;
 }
 
 .skills {
     display: flex;
+
     flex-wrap: wrap;
+
     justify-content: center;
+
     gap: 12px;
 }
 
 .skill {
     background: white;
+
     padding: 11px 18px;
+
     border-radius: 25px;
+
     border: 1px solid #dbeafe;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+
+    box-shadow:
+    0 3px 10px rgba(0,0,0,0.05);
+
     font-weight: 600;
 }
 
@@ -232,32 +306,45 @@ nav a:hover {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(290px, 1fr));
+
     gap: 25px;
 }
 
 .card {
     background: white;
+
     padding: 30px;
+
     border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,0.07);
+
     border-top: 4px solid #0284c7;
 }
 
 .card h3 {
     color: #0369a1;
+
     margin-bottom: 8px;
 }
 
 .card .date {
     font-size: 14px;
+
     color: #64748b;
+
     margin-bottom: 15px;
+
     font-weight: bold;
 }
 
 .card ul {
     padding-left: 20px;
+
     margin-top: 12px;
 }
 
@@ -276,23 +363,34 @@ nav a:hover {
 
 .project-main {
     max-width: 1000px;
+
     margin: auto;
+
     background: white;
+
     padding: 38px;
+
     border-radius: 15px;
-    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+
+    box-shadow:
+    0 7px 25px rgba(0,0,0,0.08);
+
     border-left: 5px solid #0284c7;
 }
 
 .project-main h3 {
     color: #0369a1;
+
     font-size: 25px;
+
     margin-bottom: 8px;
 }
 
 .project-date {
     color: #64748b;
+
     font-weight: bold;
+
     margin-bottom: 25px;
 }
 
@@ -302,6 +400,7 @@ nav a:hover {
 
 .project-block h4 {
     color: #0f172a;
+
     margin-bottom: 8px;
 }
 
@@ -311,17 +410,25 @@ nav a:hover {
 
 .tech-list {
     display: flex;
+
     flex-wrap: wrap;
+
     gap: 10px;
+
     margin-top: 10px;
 }
 
 .tech {
     background: #e0f2fe;
+
     color: #0369a1;
+
     padding: 7px 13px;
+
     border-radius: 20px;
+
     font-size: 14px;
+
     font-weight: bold;
 }
 
@@ -336,44 +443,38 @@ nav a:hover {
 
 .career-intro {
     text-align: center;
+
     max-width: 780px;
+
     margin: -20px auto 35px;
 }
 
 .career-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
     gap: 15px;
+
     max-width: 1050px;
+
     margin: auto;
 }
 
 .career-item {
     background: white;
+
     padding: 18px;
+
     border-radius: 10px;
+
     text-align: center;
+
     font-weight: bold;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
-}
 
-
-/* =========================
-   CERTIFICATIONS
-========================= */
-
-.cert-card {
-    position: relative;
-}
-
-.cert-card::before {
-    content: "CERTIFICATION";
-    position: absolute;
-    top: 18px;
-    right: 18px;
-    font-size: 10px;
-    font-weight: bold;
-    color: #0284c7;
+    box-shadow:
+    0 3px 12px rgba(0,0,0,0.06);
 }
 
 
@@ -383,6 +484,7 @@ nav a:hover {
 
 .contact {
     text-align: center;
+
     background: #e0f2fe;
 }
 
@@ -392,7 +494,9 @@ nav a:hover {
 
 .contact a {
     color: #0369a1;
+
     text-decoration: none;
+
     font-weight: bold;
 }
 
@@ -403,8 +507,11 @@ nav a:hover {
 
 footer {
     background: #0f172a;
+
     color: white;
+
     text-align: center;
+
     padding: 25px;
 }
 
@@ -417,13 +524,32 @@ footer {
 
     nav {
         flex-direction: column;
+
         gap: 15px;
     }
 
     nav ul {
         flex-wrap: wrap;
+
         justify-content: center;
+
         gap: 12px;
+    }
+
+    .hero {
+        padding: 60px 6%;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+        gap: 30px;
+    }
+
+    .hero-text {
+        width: 100%;
     }
 
     .hero h1 {
@@ -431,7 +557,25 @@ footer {
     }
 
     .hero h2 {
+        text-align: center;
+
         font-size: 21px;
+    }
+
+    .hero p {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+    .hero-photo {
+        flex: none;
+    }
+
+    .profile-photo {
+        width: 200px;
+
+        height: 200px;
     }
 
     section {
@@ -466,23 +610,41 @@ Avinesh S
 
 <ul>
 
-<li><a href="#about">About</a></li>
+<li>
+<a href="#about">About</a>
+</li>
 
-<li><a href="#bring">Strengths</a></li>
+<li>
+<a href="#bring">Strengths</a>
+</li>
 
-<li><a href="#skills">Skills</a></li>
+<li>
+<a href="#skills">Skills</a>
+</li>
 
-<li><a href="#education">Education</a></li>
+<li>
+<a href="#education">Education</a>
+</li>
 
-<li><a href="#experience">Experience</a></li>
+<li>
+<a href="#experience">Experience</a>
+</li>
 
-<li><a href="#projects">Projects</a></li>
+<li>
+<a href="#projects">Projects</a>
+</li>
 
-<li><a href="#certifications">Certifications</a></li>
+<li>
+<a href="#certifications">Certifications</a>
+</li>
 
-<li><a href="#career">Career</a></li>
+<li>
+<a href="#career">Career</a>
+</li>
 
-<li><a href="#contact">Contact</a></li>
+<li>
+<a href="#contact">Contact</a>
+</li>
 
 </ul>
 
@@ -496,9 +658,14 @@ Avinesh S
      HERO
 ========================= -->
 
-<section class="hero">
+<section class="hero" id="home">
 
 <div class="hero-content">
+
+
+<!-- LEFT SIDE -->
+
+<div class="hero-text">
 
 <span class="tag">
 Biomedical Engineering Graduate
@@ -526,6 +693,22 @@ Explore My Projects
 <a href="#contact" class="btn btn-outline">
 Let's Connect
 </a>
+
+</div>
+
+
+<!-- RIGHT SIDE PHOTO -->
+
+<div class="hero-photo">
+
+<img
+src="Avinesh-profile.jpeg"
+alt="Avinesh S - Biomedical Engineering Graduate"
+class="profile-photo"
+>
+
+</div>
+
 
 </div>
 
@@ -959,7 +1142,9 @@ monitoring.
 <br>
 
 <p>
-<strong>Technologies & Components:</strong>
+<strong>
+Technologies & Components:
+</strong>
 </p>
 
 <ul>
@@ -1004,16 +1189,24 @@ incubator temperature.
 <br>
 
 <p>
-<strong>Project Focus:</strong>
+<strong>
+Project Focus:
+</strong>
 </p>
 
 <ul>
 
-<li>Temperature monitoring</li>
+<li>
+Temperature monitoring
+</li>
 
-<li>Automatic temperature regulation</li>
+<li>
+Automatic temperature regulation
+</li>
 
-<li>IoT-based system development</li>
+<li>
+IoT-based system development
+</li>
 
 </ul>
 
@@ -1027,7 +1220,7 @@ incubator temperature.
 
 
 <!-- =========================
-     SMART ICU PROJECT SHOWCASE
+     FEATURED PROJECT
 ========================= -->
 
 <section class="project-showcase">
@@ -1186,7 +1379,7 @@ Certifications & Training
 <div class="cards">
 
 
-<div class="card cert-card">
+<div class="card">
 
 <h3>
 Embedded Systems
@@ -1203,7 +1396,7 @@ Codebind Technologies
 
 
 
-<div class="card cert-card">
+<div class="card">
 
 <h3>
 Wearable Technology in Healthcare
@@ -1224,7 +1417,7 @@ Veridian Micro Lab Pvt. Ltd.
 
 
 
-<div class="card cert-card">
+<div class="card">
 
 <h3>
 Artificial Intelligence
@@ -1389,7 +1582,7 @@ github.com/avineshs-bme
 
 
 <a
-href="Avinesh-biomedical Enginnering_cv2.pdf"
+href="Avinesh_S_Resume.pdf"
 class="btn"
 target="_blank">
 
@@ -1408,9 +1601,7 @@ Download Resume
 <footer>
 
 <p>
-
 © 2026 Avinesh S | Biomedical Engineering Graduate
-
 </p>
 
 </footer>
